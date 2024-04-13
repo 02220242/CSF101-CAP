@@ -43,7 +43,7 @@ def calculate_total_score(input_file):
             My_choice, outcome = line.strip().split()
             My_choice = 'rock' if My_choice == 'A' else 'paper' if My_choice == 'B' else 'scissors'
             outcome = 'lose' if outcome == 'X' else 'draw' if outcome == 'Y' else 'win'
-            print(f"\nI chose: {My_choice} \nOutcome: {outcome}")
+            
             player_score = calculate_score(My_choice, outcome)
             My_total_score += player_score
 
